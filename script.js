@@ -2,12 +2,15 @@ var perso = document.querySelector(".perso");
 var obstacles = document.querySelector(".obstacles");
 
 function sauter(){
+    let compteur = 0;
     // function pour faire sauter le personnage
     if(perso.classList != "animation"){
         perso.classList.add('animation'); 
+        compteur += 1;
     }
     setTimeout(function(){
         perso.classList.remove('animation'); 
+        compteur += 1;
     },500)
 }
 
